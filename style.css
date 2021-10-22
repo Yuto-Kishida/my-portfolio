@@ -1,0 +1,43 @@
+.self-introduction{
+  
+  width: 500px;
+  position:relative;  
+  left:500px;
+  bottom:600px;
+  text-align: center;
+  color: white;
+  background-color: rgb(84, 171, 177);
+  padding: 3rem;
+  margin: 5rem;
+}
+
+img.自己紹介写真2{
+    width:40%;
+    height:40%;
+}
+
+.Quiz1{
+
+  width: 700px;
+  position:relative;  
+  left:500px;
+  bottom:590px;
+  text-align: center;
+  color: white;
+  background-color: rgb(84, 177, 96);
+  padding: 3rem;
+  margin: 5rem;
+}
+.Quiz2{
+
+    width: 800px;
+    position:relative;  
+    left:500px;
+    bottom:250px;
+    text-align: center;
+    color: white;
+    background-color: rgb(84, 177, 96);
+    padding: 3rem;
+    margin: 5rem;
+  }
+  
