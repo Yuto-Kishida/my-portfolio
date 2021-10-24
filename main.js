@@ -1,59 +1,38 @@
-const quizText1 = document.getElementById("quiz-text1")
-const choice1 = document.getElementById("choice-1")
-const choice2 = document.getElementById("choice-2")
-const choice3 = document.getElementById("choice-3")
-const feedback1 = document.getElementById("feedback1")
-
-
-const quiz1 = {
-    text1: "僕の名前の裕大の正しいフリガナはどれでしょう？",
-    choices1: [
-      {
-        text: "ユウダイ",
-        feedback:
-          "✖！生まれて100回くらい言われたけど違うんですね～",
-      },
-      {
-        text: "ユウタ",
-        feedback: "これも✖！ユウタって読みたくなっちゃうけど違うんです！",
-      },
-      {
-        text: "ユウト",
-        feedback: "正解◎！僕もいまだになんでユウトって読むかわかってないです笑",
-      },
-    ],
-  }
-
-
-  const reloadQuiz1 = function() {
-    quizText1.textContent = "Q. " + quiz1.text1
-    choice1.textContent = quiz1.choices1[0].text
-    choice2.textContent = quiz1.choices1[1].text
-    choice3.textContent = quiz1.choices1[2].text
-  }
-
-  
-  const choose1 = function(choiceNumber) {
-    feedback1.textContent = quiz1.choices1[choiceNumber].feedback1
-  }
-
-
-  choice1.onclick = function() {
-    choose1(0)
-  }
-  choice2.onclick = function() {
-    choose1(1)
-  }
-  choice3.onclick = function() {
-    choose1(2)
-  }
-reloadQuiz1()
-
 const quizText2 = document.getElementById("quiz-text2")
 const feedback2 = document.getElementById("feedback2")
 const choice4 = document.getElementById("choice-4")
 const choice5 = document.getElementById("choice-5")
 const choice6 = document.getElementById("choice-6")
+
+const button1 = document.getElementById("nba-button")
+const alertMessage1 = function() {
+  alert("バスケが好きでNBAもよく観たりしてます！今の推しのチームはブルックリンネッツです！")
+}
+button1.onclick = alertMessage1
+
+const button2 = document.getElementById("eiga-button")
+const alertMessage2 = function() {
+  alert("よく洋画を観てます！MARVEL作品はたぶん全部観てます！好きな俳優はジェイソンステイサム、クリスヘムズワース、シルベスター・スタローンとわかる人にはわかる結構渋めです笑")
+}
+button2.onclick = alertMessage2
+
+const button3 = document.getElementById("game-button")
+const alertMessage3 = function() {
+  alert("最近はAPEXしかしてないです笑")
+}
+button3.onclick = alertMessage3
+
+const button4 = document.getElementById("kintore-button")
+const alertMessage4 = function() {
+  alert("最近は週４か５くらいでジムに通って頑張ってます！")
+}
+button4.onclick = alertMessage4
+
+const button5 = document.getElementById("manga-button")
+const alertMessage5 = function() {
+  alert("漫画は結構読んでます！ヒロアカが特に今は好きです！")
+}
+button5.onclick = alertMessage5
 
 const quiz2 = {
   text2: "左の写真を撮った場所はどこでしょう？",
